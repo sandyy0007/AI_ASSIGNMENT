@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply border-gray-700;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-text;
+}
+
+.card {
+  @apply bg-surface rounded-lg border border-gray-700 shadow-lg;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-primary hover:bg-blue-600 text-white rounded-lg font-medium transition-colors;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-secondary hover:bg-cyan-600 text-white rounded-lg font-medium transition-colors;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 bg-background border border-gray-700 rounded-lg text-text focus:outline-none focus:border-primary transition-colors;
+}
+
+.code-block {
+  @apply bg-background border border-gray-700 rounded-lg p-4 font-mono text-sm overflow-auto;
+}
+
+.metric-card {
+  @apply card p-4 hover:border-primary transition-colors cursor-default;
+}
+
+.stage-badge {
+  @apply inline-block px-2 py-1 rounded text-xs font-mono font-bold;
+}
+
+.stage-badge.pending {
+  @apply bg-gray-700 text-text_secondary;
+}
+
+.stage-badge.running {
+  @apply bg-warning text-white animate-pulse;
+}
+
+.stage-badge.success {
+  @apply bg-success text-white;
+}
+
+.stage-badge.error {
+  @apply bg-error text-white;
+}
