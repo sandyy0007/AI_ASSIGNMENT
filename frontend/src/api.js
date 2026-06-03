@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://ai-assignment-65v2.onrender.com';
 
 export const api = axios.create({
   baseURL: API_BASE,
